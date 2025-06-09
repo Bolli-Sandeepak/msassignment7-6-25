@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Exercises</title>
+</head>
+<body>
+
+<script>
+  // Exercise 1: Reverse a number
+  function reverseNumber(num) {
+    return parseInt(num.toString().split('').reverse().join(''));
+  }
+
+  let x = 32243;
+  document.write("Original Number: " + x + "<br>");
+  document.write("Reversed Number: " + reverseNumber(x) + "<br><br>");
+
+  // Exercise 2: Sort string alphabetically
+  function sortStringAlphabetically(str) {
+    return str.split('').sort().join('');
+  }
+
+  let inputStr = "webmaster";
+  document.write("Original String: " + inputStr + "<br>");
+  document.write("Sorted String: " + sortStringAlphabetically(inputStr));
+</script>
+
+</body>
+</html>
